@@ -246,14 +246,6 @@ public class MsBuildSQRunnerBegin extends AbstractMsBuildSQRunner {
       return checkNotEmpty(value);
     }
 
-    public FormValidation doCheckProjectName(@QueryParameter String value) {
-      return checkNotEmpty(value);
-    }
-
-    public FormValidation doCheckProjectVersion(@QueryParameter String value) {
-      return checkNotEmpty(value);
-    }
-
     private static FormValidation checkNotEmpty(String value) {
       if (!StringUtils.isEmpty(value)) {
         return FormValidation.ok();
